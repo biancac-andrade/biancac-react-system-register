@@ -28,7 +28,7 @@ No sistema é possivel realizar cadastro para pontos de coletas e pontos de para
 - Baixar o projeto no github 
 
 ~~~~javascript
-git clone
+git clone https://github.com/biancac-andrade/biancac-react-system-register.git
 ~~~~
 
 
@@ -41,10 +41,15 @@ git clone
 npm install
 ~~~~
 
-- Incluir suas credenciais no mockApi no arquivo tal
-
+- Incluir suas credenciais do URL e nome da rota no mockApi no arquivo de todas as chamada de axios existente de cada tela necessária, como exemplo abaixo: 
 ~~~~javascript
-codigo
+axios
+      .post(`https://XXXXXXX.mockapi.io/XXXXX`, {
+        firstName,
+        nameCoordinateX,
+        nameCoordinateY,
+        checkbox,
+      })
 ~~~~
 
 - executa o projeto 
